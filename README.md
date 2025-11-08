@@ -1,4 +1,4 @@
-# IMDb Clone
+# IMDb App Clone
 
 IMDb Clone is a Flutter-based mobile application that allows users to browse movies, view details, and manage their favorite movies. The app is designed to provide a seamless and visually appealing experience for movie enthusiasts.
 
@@ -12,7 +12,11 @@ IMDb Clone is a Flutter-based mobile application that allows users to browse mov
 
 ## Screenshots
 
-*(Add screenshots of your app here)*
+![Home page](/assets/screenshots/home_page.png "Home page")
+
+![Movie Details](/assets/screenshots/movie_details.png "Movie Details")
+
+![Favorites](/assets/screenshots/favorites.png "Favorites")
 
 ## Getting Started
 
