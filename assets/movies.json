@@ -1,0 +1,194 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Oppenheimer",
+      "year": 2023,
+      "genre": ["Biography", "Drama"],
+      "duration_minutes": 180,
+      "language": "English",
+      "director": {
+        "name": "Christopher Nolan",
+        "nationality": "British-American"
+      },
+      "cast": ["Cillian Murphy", "Kai Bird", "Martin Sherwin"],
+      "ratings": {
+        "IMDb": 8.3,
+        "RottenTomatoes": "87%"
+      },
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "available_on": ["Netflix", "HBO Max"]
+    },
+    {
+      "id": 2,
+      "title": "The Matrix",
+      "year": 1999,
+      "genre": ["Action", "Sci-Fi"],
+      "duration_minutes": 136,
+      "language": "English",
+      "director": {
+        "name": "Lana Wachowski",
+        "nationality": "American"
+      },
+      "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+      "ratings": {
+        "IMDb": 8.7,
+        "RottenTomatoes": "88%"
+      },
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_.jpg",
+      "available_on": ["Amazon Prime", "Apple TV"]
+    },
+    {
+      "id": 3,
+      "title": "Breaking Bad",
+      "year": 2008,
+      "genre": ["Crime", "Drama", "Thriller"],
+      "duration_minutes": 49,
+      "language": "English",
+      "director": {
+        "name": "Vince Gilligan",
+        "nationality": "American"
+      },
+      "cast": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
+      "ratings": {
+        "IMDb": 9.5,
+        "RottenTomatoes": "96%"
+      },
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "available_on": ["Netflix"]
+    },
+    {
+      "id": 4,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "genre": ["Action", "Crime", "Drama"],
+      "duration_minutes": 152,
+      "language": "English",
+      "director": {
+        "name": "Christopher Nolan",
+        "nationality": "British-American"
+      },
+      "cast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+      "ratings": {
+        "IMDb": 9.0,
+        "RottenTomatoes": "94%"
+      },
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg",
+      "available_on": ["Netflix", "HBO Max"]
+    },
+    {
+      "id": 5,
+      "title": "Game of Thrones",
+      "year": 2011,
+      "genre": ["Fantasy", "Drama", "Adventure"],
+      "duration_minutes": 57,
+      "language": "English",
+      "director": {
+        "name": "David Benioff",
+        "nationality": "American"
+      },
+      "cast": ["Emilia Clarke", "Kit Harington", "Peter Dinklage"],
+      "ratings": {
+        "IMDb": 9.2,
+        "RottenTomatoes": "89%"
+      },
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "available_on": ["HBO Max"]
+    },
+    {
+      "id": 6,
+      "title": "Interstellar",
+      "year": 2014,
+      "genre": ["Sci-Fi", "Drama", "Adventure"],
+      "duration_minutes": 169,
+      "language": "English",
+      "director": {
+        "name": "Christopher Nolan",
+        "nationality": "British-American"
+      },
+      "cast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
+      "ratings": {
+        "IMDb": 8.6,
+        "RottenTomatoes": "73%"
+      },
+      "poster": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_.jpg",
+      "available_on": ["Amazon Prime", "Netflix"]
+    },
+    {
+      "id": 7,
+      "title": "One Flew Over the Cuckoo's Nest",
+      "year": 1975,
+      "genre": ["Drama", "Dark Comedy"],
+      "duration_minutes": 133,
+      "language": "English",
+      "director": {
+        "name": "Milos Forman",
+        "nationality": "Czech-American"
+      },
+      "cast": ["Michael Berryman", "Peter Brocco", "Dean R. Brooks"],
+      "ratings": {
+        "IMDb": 8.7,
+        "RottenTomatoes": "93%"
+      },
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjBkMjgzMzYtNzRiMS00NDc3LWE4YTUtZjYxYjZhNjNhYzhhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "available_on": ["Netflix"]
+    },
+    {
+      "id": 8,
+      "title": "Stranger Things",
+      "year": 2016,
+      "genre": ["Drama", "Horror", "Mystery"],
+      "duration_minutes": 51,
+      "language": "English",
+      "director": {
+        "name": "Duffer Brothers",
+        "nationality": "American"
+      },
+      "cast": ["Millie Bobby Brown", "Finn Wolfhard", "David Harbour"],
+      "ratings": {
+        "IMDb": 8.7,
+        "RottenTomatoes": "92%"
+      },
+      "poster": "https://m.media-amazon.com/images/M/MV5BMGE2ZDdlN2UtZDJiOS00MTYzLTkwOGQtYTg5ZjczNjk5MmI5XkEyXkFqcGc@._V1_.jpg",
+      "available_on": ["Netflix"]
+    },
+    {
+      "id": 9,
+      "title": "Avatar: The Way of Water",
+      "year": 2022,
+      "genre": ["Action", "Adventure", "Sci-Fi"],
+      "duration_minutes": 192,
+      "language": "English",
+      "director": {
+        "name": "James Cameron",
+        "nationality": "Canadian"
+      },
+      "cast": ["Sam Worthington", "Zoe Saldaña", "Sigourney Weaver"],
+      "ratings": {
+        "IMDb": 7.8,
+        "RottenTomatoes": "76%"
+      },
+      "poster": "https://m.media-amazon.com/images/M/MV5BMWNlMWQyMTQtZjc5MC00NTljLTgxZTctZDZiZTBmODY5MTkyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "available_on": ["Disney+"]
+    },
+    {
+      "id": 10,
+      "title": "Inception",
+      "year": 2010,
+      "genre": ["Sci-Fi", "Thriller"],
+      "duration_minutes": 148,
+      "language": "English",
+      "director": {
+        "name": "Christopher Nolan",
+        "nationality": "British-American"
+      },
+      "cast": ["Leonardo DiCaprio", "Elliot Page", "Joseph Gordon-Levitt"],
+      "ratings": {
+        "IMDb": 8.8,
+        "RottenTomatoes": "87%"
+      },
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg",
+      "available_on": ["Netflix", "HBO Max"]
+    }
+  ]
+}
