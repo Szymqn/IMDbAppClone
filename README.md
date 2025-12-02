@@ -12,11 +12,11 @@ IMDb Clone is a Flutter-based mobile application that allows users to browse mov
 
 ## Screenshots
 
-![Home page](/assets/screenshots/home_page.png "Home page")
-
-![Movie Details](/assets/screenshots/movie_details.png "Movie Details")
-
-![Favorites](/assets/screenshots/favorites.png "Favorites")
+<p align="center">
+  <img src="./assets/screenshots/home_page.png" width="150" alt="Home page" />
+  <img src="./assets/screenshots/movie_details.png" width="150" alt="Movie details" />
+  <img src="./assets/screenshots/favorites.png" width="150" alt="Favourites" />
+</p>
 
 ## Getting Started
 
