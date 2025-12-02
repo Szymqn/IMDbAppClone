@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -174,7 +176,17 @@ class MovieListPage extends StatelessWidget {
       future: fetchMovies(appState),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Center(child: CircularProgressIndicator());
+          return Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CircularProgressIndicator(),
+                SizedBox(height: 20),
+                // Feedback so the user knows why it is taking longer
+                Text("Downloading movies & posters..."), 
+              ],
+            ),
+          );
         } else if (snapshot.hasError) {
           return Center(child: Text('Error: ${snapshot.error}'));
         } else {
@@ -191,14 +203,17 @@ class MovieListPage extends StatelessWidget {
       itemBuilder: (context, index) {
         return ListTile(
           leading: movies[index].poster.isNotEmpty
-              ? Image.network(
-                  movies[index].poster,
+              ? CachedNetworkImage(
+                  imageUrl: movies[index].poster,
                   width: 50,
                   height: 75,
                   fit: BoxFit.cover,
-                  errorBuilder: (context, error, stackTrace) {
-                    return Icon(Icons.movie, size: 50);
-                  },
+                  placeholder: (context, url) => SizedBox(
+                    width: 50,
+                    height: 75,
+                    child: Center(child: CircularProgressIndicator(strokeWidth: 2)),
+                  ),
+                  errorWidget: (context, url, error) => Icon(Icons.movie, size: 50),
                 )
               : Icon(Icons.movie, size: 50),
           title: Text(movies[index].title),
@@ -221,8 +236,20 @@ class MovieListPage extends StatelessWidget {
     final json = jsonDecode(response);
     final movies = (json['movies'] as List).map((movie) => Movie.fromJson(movie)).toList();
     
-    // Cache the movies
     await appState.cacheMovies(movies);
+
+    try {
+      await Future.wait(
+        movies.map((movie) {
+          if (movie.poster.isNotEmpty) {
+            return DefaultCacheManager().getSingleFile(movie.poster);
+          }
+          return Future.value(null);
+        }),
+      );
+    } catch (e) {
+      print("Offline warning: Could not download some images: $e");
+    }
     
     return movies;
   }
@@ -427,7 +454,7 @@ class FavoritesPage extends StatelessWidget {
         for (var movie in appState.favorites)
           ListTile(
             leading: Icon(Icons.favorite),
-            title: Text(movie.title), // Display movie title
+            title: Text(movie.title),
           ),
       ],
     );
